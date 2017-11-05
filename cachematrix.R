@@ -1,7 +1,10 @@
-## Put comments here that give an overall description of what your
-## functions do
+## makeCacheMatrix - pass in the matrix details to be inversed
+## eg mymatrix2 <- makeCacheMatrix(matrix(c(1,2,3,4),2,2))
+## cacheSolve - uses the output from makeCacheMatrix to inverse matrix
+## eg solvedmat2 <- cacheSolve(mymatrix2)
+##    solvedmat2 (will then display inversed matrix) 
 
-## Write a short comment describing this function
+## function makeCacheMatrix - pass in matrix as input
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
@@ -17,7 +20,7 @@ makeCacheMatrix <- function(x = matrix()) {
        getinverse = getinverse)}
 
 
-## Write a short comment describing this function
+## cacheSolve function - pass in output from makeCacheMatrix
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
